@@ -1,5 +1,6 @@
 package udemyJavaMasterclassArrays.Challenge;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -57,11 +58,13 @@ public class Main {
 	
 	// new sorted array
 	public static int[] newSortedArray(int[] arr) {
-		int[] sortedArray = new int[arr.length];
+//		int[] sortedArray = new int[arr.length];
+//		
+//		for(int i = 0; i < arr.length; i++) {
+//			sortedArray[i] = arr[i];
+//		}
 		
-		for(int i = 0; i < arr.length; i++) {
-			sortedArray[i] = arr[i];
-		}
+		int[] sortedArray = Arrays.copyOf(arr, arr.length);
 		
 		// sort array
 		boolean flag = true;
