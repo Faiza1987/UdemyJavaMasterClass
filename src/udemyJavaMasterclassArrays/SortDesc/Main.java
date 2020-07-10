@@ -1,4 +1,4 @@
-package udemyJavaMasterclassArrays.Challenge;
+package udemyJavaMasterclassArrays.SortDesc;
 
 import java.util.Arrays;
 import java.util.Scanner;
