@@ -111,7 +111,7 @@ public class Main {
 			return;
 		}
 		
-		System.out.println("Name: " + existingContact.getName() + "with phone number: " + existingContact.getPhoneNumber());
+		System.out.println("Name: " + existingContact.getName() + " with phone number: " + existingContact.getPhoneNumber());
 	}
 	
 	private static void startPhone(){
@@ -120,7 +120,7 @@ public class Main {
 	
 	private static void printActions(){
 		System.out.println("\nAvailable actions:\nPress");
-		System.out.println("\n 0 - to shutdown.\n"
+		System.out.println("\n0 - to shutdown.\n"
 							+ "1 - to print contacts.\n"
 							+ "2 - to add a new contact.\n"
 							+ "3 - to update an existing contact.\n"
