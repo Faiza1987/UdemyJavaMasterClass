@@ -14,10 +14,12 @@ public class Exercise_5_13_consecutive {
 		System.out.println(consecutive(1, 2, 3)); // true
 		System.out.println(consecutive(3, 2, 4)); // true
 		System.out.println(consecutive(-10, -8, -9)); // true
+		System.out.println(consecutive(53, 51, 52)); // true
 		
 		System.out.println(consecutive(3, 5, 7)); // false
 		System.out.println(consecutive(7, 7, 9)); // false
 		System.out.println(consecutive(1, 2, 2)); // false
+		System.out.println(consecutive(6, 3, 7)); // false
 
 
 	}
@@ -25,14 +27,15 @@ public class Exercise_5_13_consecutive {
 	public static boolean consecutive(int a, int b, int c){
 //		int k = Math.min(a, Math.min(b, c));
 		
-		int k = a;
-		
-		if(k > b && b > c){
+		int k = 0;
+		if(a < b && a < c){
+			k = a;
+		} else if(b < a && b < c){
 			k = b;
-			
 		} else {
 			k = c;
-		} 
+		}
+	
 		
 		if(k + (k + 1) + (k + 2) == (a + b + c)){
 			return true;
