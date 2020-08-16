@@ -27,14 +27,8 @@ public class Exercise_5_13_consecutive {
 	public static boolean consecutive(int a, int b, int c){
 //		int k = Math.min(a, Math.min(b, c));
 		
-		int k = 0;
-		if(a < b && a < c){
-			k = a;
-		} else if(b < a && b < c){
-			k = b;
-		} else {
-			k = c;
-		}
+		int k = a < (b < c ? b : c) ? a : (b < c ? b : c);
+		
 	
 		
 		if(k + (k + 1) + (k + 2) == (a + b + c)){
